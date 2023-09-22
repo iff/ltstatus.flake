@@ -7,7 +7,7 @@
     mach-nix.url = "github:DavHau/mach-nix";
 
     ltstatus = {
-      url = "git+ssh://git@github.com/dkuettel/ltstatus?rev=acd4a4c3a77a72f2eefa55c716fee127fcca4c33";
+      url = "github:dkuettel/ltstatus";
       flake = false;
     };
   };

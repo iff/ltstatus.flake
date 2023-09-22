@@ -38,16 +38,15 @@
       "locked": {
         "lastModified": 1689430302,
         "narHash": "sha256-lpgy/udeinfG921b7wErFJakyn0DTVyaDkrpOhiUg+c=",
-        "ref": "refs/heads/main",
+        "owner": "dkuettel",
+        "repo": "ltstatus",
         "rev": "acd4a4c3a77a72f2eefa55c716fee127fcca4c33",
-        "revCount": 130,
-        "type": "git",
-        "url": "ssh://git@github.com/dkuettel/ltstatus"
+        "type": "github"
       },
       "original": {
-        "rev": "acd4a4c3a77a72f2eefa55c716fee127fcca4c33",
-        "type": "git",
-        "url": "ssh://git@github.com/dkuettel/ltstatus"
+        "owner": "dkuettel",
+        "repo": "ltstatus",
+        "type": "github"
       }
     },
     "mach-nix": {
