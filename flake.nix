@@ -22,7 +22,7 @@
         };
 
         ltstatusPythonDependencies = machNix.mkPython {
-          # TODO: requirements = builtins.readFile ./python/requirements.txt;
+          # TODO: requirements = builtins.readFile ./requirements.txt;
 
           requirements = ''
             jeepney ~= 0.8.0
@@ -44,9 +44,9 @@
 
           installPhase = ''
             mkdir $out
-            cp -r * $out/
+            cp -r python $out/
 
-            # patch bin/ltstatus to use our Python
+            mkdir $out/bin
             echo "PYTHONPATH=$out/python python3.9 \$@" > $out/bin/ltstatus
             wrapProgram $out/bin/ltstatus --prefix PATH : ${ltstatusPythonDependencies}/bin \
           '';
