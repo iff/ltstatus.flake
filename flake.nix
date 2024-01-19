@@ -48,6 +48,7 @@
 
             mkdir $out/bin
             echo "PYTHONPATH=$out/python python3.9 \$@" > $out/bin/ltstatus
+            chmod +x $out/bin/ltstatus
             wrapProgram $out/bin/ltstatus --prefix PATH : ${ltstatusPythonDependencies}/bin \
           '';
         };
